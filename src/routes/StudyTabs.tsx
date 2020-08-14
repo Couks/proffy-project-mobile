@@ -38,9 +38,7 @@ function StudyTabs() {
       activeTintColor: '#32264d',
     }
   }
-    
-    
-    >
+  >
       <Screen
         name="TeacherList"
         component={TeacherList}

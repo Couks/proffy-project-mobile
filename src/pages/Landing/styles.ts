@@ -9,7 +9,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#8257e5',
     justifyContent: 'center',
     padding: 40
-
   },
 
   banner: {
@@ -23,6 +22,7 @@ const styles = StyleSheet.create({
     fontSize: 20,
     lineHeight: 30,
     marginTop: 20,
+    textAlign: 'center'
   },
 
   titleBold: {
@@ -33,15 +33,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     marginTop: 40,
     justifyContent: 'space-between',
-
   },
 
   button: {
-    height: 150,
     width: '48%',
     backgroundColor: '#333',
     borderRadius: 8,
-    padding: 24,
+    padding: 30,
     justifyContent: "space-between",
   },
 
@@ -57,6 +55,7 @@ const styles = StyleSheet.create({
     fontFamily: 'Archivo_700Bold',
     color: '#FFF',
     fontSize: 20,
+    textAlign: "center",
   },
 
   totalConnections: {
