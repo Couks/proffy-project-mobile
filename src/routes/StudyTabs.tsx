@@ -3,10 +3,8 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 import TeacherList from '../pages/TeacherList';
 import Favorites from '../pages/Favorites';
-import { Archivo_700Bold } from '@expo-google-fonts/archivo';
 
 const { Navigator, Screen } = createBottomTabNavigator();
-
 
 function StudyTabs() {
   return (
