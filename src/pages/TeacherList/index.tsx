@@ -115,18 +115,18 @@ function TeacherList() {
   return (
     <View style={styles.container}>
       <PageHeader
-        title="Proffys Disponíveis"
+        title="Proffys disponíveis"
         headerRight={
-          <BorderlessButton onPress={handleToggleFiltersVisible}>
-            <Feather 
-              name="filter" 
-              size={20} 
-              color={"#fff"} 
+          <BorderlessButton>
+            <Feather
+              name="filter"
+              size={20}
+              color="#fff"
+              onPress={handleToggleFiltersVisible}
             />
           </BorderlessButton>
         }
       >
-
         {isFiltersVisible && (
           <View style={styles.searchForm}>
             <Text style={styles.label}>Matéria</Text>
@@ -177,7 +177,7 @@ function TeacherList() {
                 <Text style={styles.label}>Horário</Text>
 
                 <RectButton style={styles.picker} onPress={handleTimeSelector}>
-                  <Text>{textTime || "Hora"}</Text>
+                  <Text>{textTime||"Hora"}</Text>
                 </RectButton>
 
                 <DateTimePickerModal
@@ -188,7 +188,7 @@ function TeacherList() {
                 />
               </View>
             </View>
-            <Text> {textTime} </Text>
+            <Text>{textTime}</Text>
             <RectButton
               style={styles.submitButton}
               onPress={handleFiltersSubmit}
@@ -198,10 +198,9 @@ function TeacherList() {
           </View>
         )}
       </PageHeader>
-
       <ScrollView
         style={styles.teacherList}
-        contentContainerStyle={{paddingHorizontal: 16, paddingBottom: 16,}}
+        contentContainerStyle={{ paddingHorizontal: 16, paddingBottom: 16 }}
       >
         {teachers.map((teacher: Teacher) => {
           return (
